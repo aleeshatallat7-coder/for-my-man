@@ -1,0 +1,67 @@
+body {
+    background-color: #fffaf0;
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+}
+
+section { padding: 40px 20px; text-align: center; }
+
+.hero { background: #ff7675; color: white; padding: 60px 20px; }
+
+.photo-grid img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+button {
+    background: #ff7675;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    margin: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover { background: #d63031; }
+/* Styling for the long letter */
+.letter-box {
+    max-width: 700px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    text-align: left; /* Letters look better left-aligned */
+    line-height: 1.8;
+    border-left: 5px solid #ff7675;
+}
+
+/* Styling for the reveal box */
+.reveal-box {
+    display: none; /* Hidden until a button is clicked */
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #ffeaa7;
+    border: 2px dashed #fdcb6e;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    color: #d35400;
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.button-container {
+    margin-bottom: 20px;
+}
